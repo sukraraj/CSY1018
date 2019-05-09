@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>General news</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javascript.js" ></script>
+	 
+</head>
+<script type="text/javascript">
+
+	function showContent(id){
+		var smallsection= document.getElementById("smallsection-content");
+		smallsection.innerHTML="";
+		var contentText= document.getElementById(id).innerHTML;
+		smallsection.innerHTML=contentText;
+	}
+
+	function loadFunction(){
+		document.getElementById("smallsection-content").innerHTML=document.getElementById(1).innerHTML;
+			
+	}
+	document.addEventListener('DOMContentLoaded', loadFunction);
+
+</script>
+	<header>
+		<div class="img1">
+			<img src="logo.jpg">
+		</div>
+		<p id="Date-and-time"></p>
+		
+	</header>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html" title="This is Home page">Home</a></li>
+			<li><a href="Review.html" title="This is for Review">Review</a></li>
+			<li><a href="Glossary.html" title="This is for Glossary">Glossary</a></li>
+			<li><a href="Jobs.html" title="This is for Jobs">Jobs</a></li>
+			<li><a href="Tutorial.html" title="This is for Tutorial">Tutorial</a></li>
+		</ul>
+		<div class="section-content">
+			<h2>Details:</h2>
+			<div class="smallsection-content" id="smallsection-content"></div>
+		</div>
+		<div class="navigation">
+			<li onclick="showContent(1)">CSS</li>
+			<li onclick="showContent(2)">HTML</li>
+			<li onclick="showContent(3)" >Javascript</li>
+			<li onclick="showContent(4)">Navigation Bar</li>
+			<li onclick="showContent(5)">URL</li>
+		</div>
+<!-- 	cdsjclkds	< -->
+<p id="1" style="display: none;">
+			It is actually the language that describe the layout of the webpage and which stands for cascading style sheet.It is mainly used to format the layout of webpages.It helps to present the page by defying the margin,padding,height,weidth,color,thickness,border,fonts etc.
+		</p>
+		<p id="2"  style="display: none;">	
+			HTML is used to design webpages,interface for gadgets and web application.It gives basic formation to the page and which stands for hypertext markup language.The building block of html pages is html elements.It contain header,paragraph,table,footer and so on. 
+		</p>
+		<p id="3"  style="display: none;">
+			Javascript is mainly a scripting language used to design webpages communal by adding the animation,popup menu,transcript,clicable bottom etc and also it is cross-platform and object based scripting language.It makes the performance quicker.
+		</p>
+		<p id="4"  style="display: none;">
+			In the webpage there is a user interface element that contains links to other sectionof the websites.It's location is mostly below the header and above the content. from the navigation bar we can visit any section of the websites.Commonly navigation bar is presented as horizontal list.But in some website there are both horizontal and vertical navigation.
+		</p>
+		<p id="5"  style="display: none;">
+			URL stands for uniform resource locator with the help of url we can know the mechanism of retrieving the web resource which are located in the computer network.Referencing of webpages,file transfer,database access can be done through teh URL and many other function.URL can be written in its typical form like protocol,hostname and a file name. 
+		</p>
+	</nav>
+</body>
+</html>	

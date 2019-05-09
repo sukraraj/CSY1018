@@ -1,4 +1,4 @@
-function dateFunction(){
-	var a= new date();
-	var div = document.getElementById("")
+window.onload = function(){
+	var a = new Date();
+	document.getElementById("Date-and-time").innerHTML = a;
 }
